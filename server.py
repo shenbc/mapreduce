@@ -132,10 +132,10 @@ def main():
         communication_parallel(worker_list, action="get_model")
         print("get end")
         global_para = torch.nn.utils.parameters_to_vector(global_model.parameters()).clone().detach()
-        # 50网段（非聚合）收取数据，不对本地参数操作
+        # 50 网段（非聚合）收取数据，不对本地参数操作
         aggregate_model_from_nic(global_para, updated_para, args.step_size, worker_num)
         updated_para.clear()
-        # 200网段收数据，并更新到本地参数
+        # 200 网段收数据，并更新到本地参数
         global_para = aggregate_model(global_para, worker_list, args.step_size)
 
         print("send begin")
