@@ -1,0 +1,54 @@
+PS number = 1
+Worker number = 18
+Switch number = 6
+Model size = 96 Mb
+Link bandwidth = 1000 Mbps
+
+h1 aggregation-point s1
+Path: ['h1', 's2', 's1']
+h2 aggregation-point s1
+Path: ['h2', 's2', 's1']
+h3 aggregation-point s6
+Path: ['h3', 's2', 's6']
+h4 aggregation-point s6
+Path: ['h4', 's2', 's6']
+h5 aggregation-point s6
+Path: ['h5', 's2', 's6']
+h6 aggregation-point s6
+Path: ['h6', 's2', 's6']
+h7 aggregation-point s1
+Path: ['h7', 's3', 's1']
+h8 aggregation-point s1
+Path: ['h8', 's3', 's1']
+h9 aggregation-point s6
+Path: ['h9', 's3', 's6']
+h10 aggregation-point s2
+Path: ['h10', 's3', 's1', 's2']
+h11 aggregation-point s6
+Path: ['h11', 's3', 's6']
+h12 aggregation-point s6
+Path: ['h12', 's3', 's6']
+h13 aggregation-point s6
+Path: ['h13', 's4', 's6']
+h14 aggregation-point s4
+Path: ['h14', 's4']
+h15 aggregation-point s1
+Path: ['h15', 's4', 's1']
+h16 aggregation-point s6
+Path: ['h16', 's4', 's6']
+h17 aggregation-point s5
+Path: ['h17', 's4', 's5']
+h18 aggregation-point s3
+Path: ['h18', 's4', 's3']
+s1 aggregates
+Path: ['s1', 's4', 'h19']
+s2 aggregates
+Path: ['s2', 's1', 's4', 'h19']
+s3 aggregates
+Path: ['s3', 's5', 's4', 'h19']
+s4 aggregates
+Path: ['s4', 'h19']
+s5 aggregates
+Path: ['s5', 's4', 'h19']
+s6 aggregates
+Path: ['s6', 's4', 'h19']

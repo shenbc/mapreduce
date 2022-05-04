@@ -1,0 +1,15 @@
+{
+    "worker_config_list": [
+      {
+        "name": "host0",
+        "host": "server08",
+        "ip": "172.16.50.8",
+        "nic_ip": "172.16.200.8",
+        "ssh_port": "6008",
+        "user": "sdn",
+        "pwd": "sdn123456",
+        "computation": 3,
+        "dynamics": 2
+      }
+    ]
+  }

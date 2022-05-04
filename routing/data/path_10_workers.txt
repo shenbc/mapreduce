@@ -1,0 +1,32 @@
+PS number = 1
+Worker number = 9
+Switch number = 6
+Model size = 96 Mb
+Link bandwidth = 1000 Mbps
+
+h1 aggregation-point s2
+Path: ['h1', 's2']
+h2 aggregation-point s6
+Path: ['h2', 's2', 's6']
+h3 aggregation-point s1
+Path: ['h3', 's2', 's1']
+h4 aggregation-point s5
+Path: ['h4', 's3', 's5']
+h5 aggregation-point s1
+Path: ['h5', 's3', 's1']
+h6 aggregation-point s6
+Path: ['h6', 's3', 's6']
+h7 aggregation-point s6
+Path: ['h7', 's4', 's6']
+h8 aggregation-point s6
+Path: ['h8', 's4', 's6']
+h9 aggregation-point s2
+Path: ['h9', 's4', 's1', 's2']
+s1 aggregates
+Path: ['s1', 's4', 'h10']
+s2 aggregates
+Path: ['s2', 's1', 's4', 'h10']
+s5 aggregates
+Path: ['s5', 's4', 'h10']
+s6 aggregates
+Path: ['s6', 's4', 'h10']
